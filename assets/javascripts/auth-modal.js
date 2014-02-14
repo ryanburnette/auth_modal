@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 
   proto = AuthModal.prototype;
 
-  proto.login = function () {
+  proto.signin = function () {
     $modal.modal();
   };
 
@@ -50,8 +50,8 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
   a = AuthModal.create();
   
-  $('.login a').on('click', function (e) {
+  $('.signin a').on('click', function (e) {
     e.preventDefault();
-    a.login();
+    a.signin();
   });
 });
