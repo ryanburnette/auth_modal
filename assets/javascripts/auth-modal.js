@@ -31,8 +31,13 @@ jQuery(document).ready(function($) {
   AuthModal.create = AuthModal;
 
   init = function () {
-    $.get('/auth-modal.html', function (data) {
+    var modal
+      ;
+
+    modal = $.get('/auth-modal.html', function (data) {
       $modal = $(data);
+    });
+    modal.done(function () {
       $modal.find('.close').on('click', function () {
         hide();
       });
