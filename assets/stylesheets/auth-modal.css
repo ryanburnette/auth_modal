@@ -6775,6 +6775,9 @@ button.close {
 .auth-modal .nav {
   margin: 1.2rem 0 -1.6rem;
 }
+.auth-modal .signin-options {
+  margin-bottom: -1.6rem;
+}
 .auth-modal .signin-options [class^="col"] {
   margin: 0 0 1.6rem;
 }
