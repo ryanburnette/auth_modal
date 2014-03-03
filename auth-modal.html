@@ -4,13 +4,18 @@
       <div class="modal-header">
         <button type="button" class="close">&times;</button>
         <h4 class="modal-title">Please Sign In</h4>
+
+        <div class="alert alert-danger">
+          <p>This is an alert.</p>
+        </div>
+
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#">Social</a></li>
-          <li><a href="#">Account</a></li>
+          <li class="active"><a href="#social" data-toggle="tab">Social</a></li>
+          <li><a href="#account" data-toggle="tab">Account</a></li>
         </ul>
       </div>
-      <div class="modal-body">
-        <div class="signin-options">
+      <div class="modal-body tab-content">
+        <div id="social" class="signin-option social tab-pane fade in active">
           <div class="row">
             <div class="col-md-6">
               <div class="option">
@@ -36,6 +41,25 @@
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+        
+        <div id="account" class="signin-option account tab-pane fade in">
+          <div class="row">
+            <form action="#">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="username">Password</label>
+                  <input type="password" class="form-control">
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
