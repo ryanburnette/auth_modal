@@ -6782,7 +6782,7 @@ button.close {
   margin: 0.2rem 1.6rem -1.2rem;
 }
 .auth-modal .signin-option [class^="col"] {
-  margin: 0 0 1.6rem;
+  margin: 0 0 0.8rem;
 }
 .auth-modal .signin-option button {
   padding-top: 1.2rem;
